@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #002855; /* Deep blue background */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 20px; /* Add some padding around the content */
+}
+
+/* Hiding elements */
+.hidden {
+    display: none;
+}
+
+/* Landing page styles */
+.landing-container {
+    text-align: center;
+}
+
+/* Button styles */
+.button-group button {
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #28A745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.button-group button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Return to Landing Page button styles */
+.return-button {
+    padding: 15px 30px; /* Padding */
+    background-color: #28A745; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1.2rem; /* Font size */
+    margin-top: 20px; /* Margin on top */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+.return-button:hover {
+    background-color: #218838; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+/* Game container */
+#game-container {
+    width: 90%; /* Increased width */
+    max-width: 1200px; /* Optional: Set a maximum width for larger screens */
+    margin: auto; /* Center game container */
+}
+
+/* Scoreboard styles */
+#scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    background-color: #004080; /* Darker blue for scoreboard */
+    padding: 10px 0;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Category row styles */
+#category-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #00509E; /* Blue for category header */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Game board styles */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px; /* Increased gap between cells */
+    margin-bottom: 20px;
+}
+
+/* Cell styles */
+.cell {
+    background-color: #00509E; /* Light blue for cells */
+    padding: 40px; /* Increased padding for larger cells */
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth color transition */
+    font-size: 2rem; /* Increased font size */
+}
+
+/* Clicked cell styles */
+.cell.clicked {
+    background-color: #444; /* Dark grey for clicked cells */
+    cursor: default; /* Change cursor to default */
+}
+
+/* Cell hover effect */
+.cell:hover {
+    background-color: #0074D9; /* Lighter blue on hover */
+}
+
+/* Question screen title styles */
+#question-screen h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Buttons on question screen */
+#question-screen button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #28A745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+#question-screen button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}

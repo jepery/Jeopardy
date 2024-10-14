@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeopardy Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="landing-page" class="landing-container">
+    <h1>Welcome to FDP Jeopardy!</h1>
+    <div class="button-group">
+      <button onclick="startRound(1)">Round 1</button>
+      <button onclick="startRound(2)">Round 2</button>
+      <button onclick="startRound(3)">Round 3</button>
+    </div>
+  </div>
+
+  <div id="game-container" class="hidden">
+    <div id="scoreboard">
+      <div>Group 1: <span id="score-group1">0</span></div>
+      <div>Group 2: <span id="score-group2">0</span></div>
+      <div>Group 3: <span id="score-group3">0</span></div>
+    </div>
+
+    <div id="category-row"></div>
+    <div id="game-board"></div>
+    <button onclick="returnToLandingPage()" class="return-button">Return to Landing Page</button> <!-- Updated button -->
+  </div>
+
+  <div id="question-screen" class="hidden">
+    <h1 id="question-text"></h1>
+    <div class="button-group">
+      <button onclick="awardPoints(1)">Group 1</button>
+      <button onclick="awardPoints(2)">Group 2</button>
+      <button onclick="awardPoints(3)">Group 3</button>
+    </div>
+    <button onclick="goBack()">Back</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
